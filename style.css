@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #4b48f5, rgb(30, 22, 143));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    padding: 20px;
+    width: 100%;
+}
+
+.title{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.form{
+    margin: 20px;
+}
+
+.question{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.choices{
+    display: flex;
+    flex-direction: column;
+}
+
+.choice{
+    display: flex;
+    padding: 15px;
+    background: #efefef;
+    border-radius: 3px;
+    align-items: center;
+    border: 1px solid #888791;
+    margin: 3px 0;
+}
+
+.choice:hover{
+    background: #e0e0e0;
+    border: 1px solid #504f55;
+}
+
+.choice__checkbox{
+    width: 30px;
+    height: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.choice__text{
+    width: 100%;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.send-button{
+    margin: 10px 0;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #000d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #1a1919;
+}
+
+.chronometer{
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #4f4;
+    text-align: center;
+}
+
+.content__answer{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0,.5);
+    z-index: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer{
+    padding: 20px;
+    width: 400px;
+    height: 380px;
+    background: #eee;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.answer__title{
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.answer div{
+    margin: 3px 0;
+}
+
+.red{
+    color: #f22;
+}
+
+.green{
+    color: #2f2;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@media (width <= 400px){
+    .content{
+        padding: 3px;
+    }
+
+    .form{
+        margin: 5px;
+    }
+
+    .title{
+        padding: 5px;
+    }
+
+    .bold{
+        font-size: 0.90em;
+    }
+}

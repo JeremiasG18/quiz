@@ -1,0 +1,377 @@
+[
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la selección argentina?",
+        "choices": ["Gabriel Batistuta", "Diego Maradona", "Lionel Messi", "Sergio Agüero"],
+        "answer": "Lionel Messi"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 2014?",
+        "choices": ["Brasil", "Alemania", "Argentina", "Francia"],
+        "answer": "Alemania"
+    },
+    {
+        "question": "¿Cuál es el estadio más grande del mundo por capacidad?",
+        "choices": ["Maracaná", "Camp Nou", "Azteca", "Rungrado May Day"],
+        "answer": "Rungrado May Day"
+    },
+    {
+        "question": "¿Qué jugador ganó el Balón de Oro en 2005?",
+        "choices": ["Ronaldinho", "Lionel Messi", "Zinedine Zidane", "Cristiano Ronaldo"],
+        "answer": "Ronaldinho"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Champions League?",
+        "choices": ["Barcelona", "Liverpool", "Bayern Múnich", "Real Madrid"],
+        "answer": "Real Madrid"
+    },
+    {
+        "question": "¿Qué selección ha ganado más Copas del Mundo?",
+        "choices": ["Italia", "Brasil", "Alemania", "Argentina"],
+        "answer": "Brasil"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la Premier League?",
+        "choices": ["Wayne Rooney", "Thierry Henry", "Alan Shearer", "Sergio Agüero"],
+        "answer": "Alan Shearer"
+    },
+    {
+        "question": "¿Qué equipo ganó la Premier League en la temporada 2015-2016?",
+        "choices": ["Manchester City", "Chelsea", "Leicester City", "Arsenal"],
+        "answer": "Leicester City"
+    },
+    {
+        "question": "¿En qué año se fundó el FC Barcelona?",
+        "choices": ["1899", "1902", "1910", "1920"],
+        "answer": "1899"
+    },
+    {
+        "question": "¿Qué jugador tiene el récord de más goles en una sola temporada de la Premier League?",
+        "choices": ["Luis Suárez", "Alan Shearer", "Cristiano Ronaldo", "Mohamed Salah"],
+        "answer": "Mohamed Salah"
+    },
+    {
+        "question": "¿Qué selección ganó la Eurocopa en 2008?",
+        "choices": ["Italia", "España", "Alemania", "Portugal"],
+        "answer": "España"
+    },
+    {
+        "question": "¿Quién es el jugador con más títulos de la Champions League?",
+        "choices": ["Cristiano Ronaldo", "Lionel Messi", "Paco Gento", "Clarence Seedorf"],
+        "answer": "Paco Gento"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Serie A?",
+        "choices": ["Inter de Milán", "AC Milan", "Juventus", "Roma"],
+        "answer": "Juventus"
+    },
+    {
+        "question": "¿Quién es el entrenador con más títulos de la Premier League?",
+        "choices": ["Arsène Wenger", "José Mourinho", "Pep Guardiola", "Alex Ferguson"],
+        "answer": "Alex Ferguson"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Bundesliga?",
+        "choices": ["Borussia Dortmund", "Hamburgo", "Bayern Múnich", "Werder Bremen"],
+        "answer": "Bayern Múnich"
+    },
+    {
+        "question": "¿Quién es el jugador más joven en ganar un Balón de Oro?",
+        "choices": ["Michael Owen", "Lionel Messi", "Cristiano Ronaldo", "Kylian Mbappé"],
+        "answer": "Michael Owen"
+    },
+    {
+        "question": "¿En qué año se jugó el primer Mundial de Fútbol?",
+        "choices": ["1930", "1934", "1940", "1950"],
+        "answer": "1930"
+    },
+    {
+        "question": "¿Qué selección ganó el primer Mundial de Fútbol?",
+        "choices": ["Brasil", "Argentina", "Uruguay", "Italia"],
+        "answer": "Uruguay"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Ligue 1?",
+        "choices": ["Lyon", "PSG", "Marseille", "Monaco"],
+        "answer": "PSG"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la Champions League?",
+        "choices": ["Lionel Messi", "Cristiano Ronaldo", "Raúl", "Karim Benzema"],
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa América en 2021?",
+        "choices": ["Argentina", "Brasil", "Chile", "Uruguay"],
+        "answer": "Argentina"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Copa Libertadores?",
+        "choices": ["Boca Juniors", "River Plate", "Independiente", "Santos"],
+        "answer": "Independiente"
+    },
+    {
+        "question": "¿Qué jugador tiene el récord de más goles en un Mundial?",
+        "choices": ["Pelé", "Ronaldo", "Miroslav Klose", "Gerd Müller"],
+        "answer": "Miroslav Klose"
+    },
+    {
+        "question": "¿Qué selección ha ganado más títulos de la Copa América?",
+        "choices": ["Brasil", "Argentina", "Uruguay", "Chile"],
+        "answer": "Uruguay"
+    },
+    {
+        "question": "¿En qué año se fundó la FIFA?",
+        "choices": ["1904", "1910", "1920", "1930"],
+        "answer": "1904"
+    },
+    {
+        "question": "¿Qué jugador tiene el récord de más partidos jugados en la Premier League?",
+        "choices": ["Ryan Giggs", "Gareth Barry", "Frank Lampard", "Steven Gerrard"],
+        "answer": "Gareth Barry"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Copa del Rey?",
+        "choices": ["Barcelona", "Real Madrid", "Athletic Club", "Valencia"],
+        "answer": "Barcelona"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la Serie A?",
+        "choices": ["Francesco Totti", "Silvio Piola", "Roberto Baggio", "Gunnar Nordahl"],
+        "answer": "Silvio Piola"
+    },
+    {
+        "question": "¿Qué jugador tiene el récord de más goles en una sola temporada de la Liga Española?",
+        "choices": ["Cristiano Ronaldo", "Lionel Messi", "Luis Suárez", "Telmo Zarra"],
+        "answer": "Lionel Messi"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Liga Española?",
+        "choices": ["Barcelona", "Real Madrid", "Atlético de Madrid", "Valencia"],
+        "answer": "Real Madrid"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1998?",
+        "choices": ["Brasil", "Francia", "Alemania", "Argentina"],
+        "answer": "Francia"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del Barcelona?",
+        "choices": ["César Rodríguez", "Lionel Messi", "Samuel Eto'o", "Ronaldinho"],
+        "answer": "Lionel Messi"
+    },
+    {
+        "question": "¿Qué jugador ha ganado más títulos de la Copa del Rey?",
+        "choices": ["Andrés Iniesta", "Lionel Messi", "Xavi Hernández", "Iker Casillas"],
+        "answer": "Lionel Messi"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 2006?",
+        "choices": ["Francia", "Italia", "Alemania", "Brasil"],
+        "answer": "Italia"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del Real Madrid?",
+        "choices": ["Raúl", "Cristiano Ronaldo", "Alfredo Di Stéfano", "Karim Benzema"],
+        "answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Copa Italia?",
+        "choices": ["AC Milan", "Inter de Milán", "Roma", "Juventus"],
+        "answer": "Juventus"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 2010?",
+        "choices": ["España", "Países Bajos", "Alemania", "Italia"],
+        "answer": "España"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del Manchester United?",
+        "choices": ["Eric Cantona", "Wayne Rooney", "George Best", "Bobby Charlton"],
+        "answer": "Wayne Rooney"
+    },
+    {
+        "question": "¿Qué jugador tiene el récord de más goles en una sola temporada de la Serie A?",
+        "choices": ["Gonzalo Higuaín", "Francesco Totti", "Ciro Immobile", "Antonio Di Natale"],
+        "answer": "Gonzalo Higuaín"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Copa de Alemania (DFB-Pokal)?",
+        "choices": ["Borussia Dortmund", "Schalke 04", "Hamburgo", "Bayern Múnich"],
+        "answer": "Bayern Múnich"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1994?",
+        "choices": ["Italia", "Brasil", "Alemania", "Argentina"],
+        "answer": "Brasil"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del Bayern Múnich?",
+        "choices": ["Gerd Müller", "Karl-Heinz Rummenigge", "Miroslav Klose", "Robert Lewandowski"],
+        "answer": "Gerd Müller"
+    },
+    {
+        "question": "¿Qué selección ganó la Eurocopa en 2016?",
+        "choices": ["Francia", "Alemania", "Portugal", "Italia"],
+        "answer": "Portugal"
+    },
+    {
+        "question": "¿Qué jugador tiene el récord de más goles en una sola temporada de la Bundesliga?",
+        "choices": ["Robert Lewandowski", "Gerd Müller", "Jupp Heynckes", "Klaus Fischer"],
+        "answer": "Gerd Müller"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Supercopa de Europa?",
+        "choices": ["Real Madrid", "Barcelona", "AC Milan", "Liverpool"],
+        "answer": "Barcelona"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1970?",
+        "choices": ["Italia", "Brasil", "Alemania", "Argentina"],
+        "answer": "Brasil"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del PSG?",
+        "choices": ["Pauleta", "Edinson Cavani", "Zlatan Ibrahimović", "Kylian Mbappé"],
+        "answer": "Edinson Cavani"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la FA Cup?",
+        "choices": ["Arsenal", "Manchester United", "Chelsea", "Liverpool"],
+        "answer": "Arsenal"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del Liverpool?",
+        "choices": ["Ian Rush", "Steven Gerrard", "Robbie Fowler", "Kenny Dalglish"],
+        "answer": "Ian Rush"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1986?",
+        "choices": ["Italia", "Argentina", "Alemania", "Brasil"],
+        "answer": "Argentina"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1990?",
+        "choices": ["Italia", "Alemania", "Brasil", "Argentina"],
+        "answer": "Alemania"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la selección brasileña?",
+        "choices": ["Pelé", "Ronaldo", "Romário", "Neymar"],
+        "answer": "Pelé"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Supercopa de España?",
+        "choices": ["Real Madrid", "Barcelona", "Valencia", "Atlético de Madrid"],
+        "answer": "Barcelona"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1958?",
+        "choices": ["Italia", "Brasil", "Alemania", "Uruguay"],
+        "answer": "Brasil"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del Manchester City?",
+        "choices": ["Sergio Agüero", "Carlos Tevez", "Raheem Sterling", "Gabriel Jesus"],
+        "answer": "Sergio Agüero"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1978?",
+        "choices": ["Italia", "Brasil", "Argentina", "Alemania"],
+        "answer": "Argentina"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Liga de Campeones de la CONCACAF?",
+        "choices": ["América", "Chivas", "Cruz Azul", "Monterrey"],
+        "answer": "América"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del Atlético de Madrid?",
+        "choices": ["Fernando Torres", "Diego Forlán", "Luis Aragonés", "Antoine Griezmann"],
+        "answer": "Luis Aragonés"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1966?",
+        "choices": ["Inglaterra", "Brasil", "Alemania", "Italia"],
+        "answer": "Inglaterra"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Liga MX?",
+        "choices": ["América", "Chivas", "Cruz Azul", "Pumas"],
+        "answer": "América"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la Liga MX?",
+        "choices": ["Jared Borgetti", "José Saturnino Cardozo", "Omar Bravo", "Cuauhtémoc Blanco"],
+        "answer": "José Saturnino Cardozo"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1954?",
+        "choices": ["Italia", "Brasil", "Alemania", "Hungría"],
+        "answer": "Alemania"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Liga de Brasil (Brasileirão)?",
+        "choices": ["Flamengo", "Corinthians", "Palmeiras", "São Paulo"],
+        "answer": "Palmeiras"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la selección italiana?",
+        "choices": ["Roberto Baggio", "Alessandro Del Piero", "Luigi Riva", "Francesco Totti"],
+        "answer": "Luigi Riva"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1962?",
+        "choices": ["Italia", "Brasil", "Alemania", "Argentina"],
+        "answer": "Brasil"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Major League Soccer (MLS)?",
+        "choices": ["LA Galaxy", "Seattle Sounders", "D.C. United", "Toronto FC"],
+        "answer": "LA Galaxy"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la MLS?",
+        "choices": ["Landon Donovan", "Chris Wondolowski", "Josef Martínez", "Bradley Wright-Phillips"],
+        "answer": "Chris Wondolowski"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 2002?",
+        "choices": ["Italia", "Brasil", "Alemania", "Argentina"],
+        "answer": "Brasil"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Copa Sudamericana?",
+        "choices": ["Boca Juniors", "Independiente", "River Plate", "São Paulo"],
+        "answer": "Independiente"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia del Inter de Milán?",
+        "choices": ["Ronaldo", "Giuseppe Meazza", "Zlatan Ibrahimović", "Samuel Eto'o"],
+        "answer": "Giuseppe Meazza"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1994?",
+        "choices": ["Italia", "Brasil", "Alemania", "Argentina"],
+        "answer": "Brasil"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Liga de Argentina?",
+        "choices": ["Boca Juniors", "River Plate", "Independiente", "Racing Club"],
+        "answer": "River Plate"
+    },
+    {
+        "question": "¿Quién es el máximo goleador de la historia de la selección uruguaya?",
+        "choices": ["Diego Forlán", "Edinson Cavani", "Luis Suárez", "Enzo Francescoli"],
+        "answer": "Luis Suárez"
+    },
+    {
+        "question": "¿Qué selección ganó la Copa del Mundo en 1938?",
+        "choices": ["Italia", "Brasil", "Alemania", "Argentina"],
+        "answer": "Italia"
+    },
+    {
+        "question": "¿Qué equipo ha ganado más títulos de la Liga de Chile?",
+        "choices": ["Colo-Colo", "Universidad de Chile", "Universidad Católica", "Cobreloa"],
+        "answer": "Colo-Colo"
+    }
+]
