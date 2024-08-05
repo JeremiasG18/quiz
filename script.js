@@ -4,7 +4,7 @@ const creacionDeAlmacenamiento = ()=>{
     localStorage.setItem('respuestas_incorrectas', 0);
     localStorage.setItem('respondidas', 0);
     localStorage.setItem('numero_pregunta', 0);
-    localStorage.setItem('respuestas_no_respondidas', 0);
+    localStorage.setItem('preguntas_no_respondidas', 0);
 }
 
 creacionDeAlmacenamiento();
@@ -121,7 +121,7 @@ const mostrarContenidoRespuesta = (respuestaCorrecta, tituloRespuesta, colorResp
             </div>
             <div class="">
                 <div class="true__title">No respondidas</div>
-                <div class="true__text">${localStorage.getItem('respuestas_no_respondidas')}</div>
+                <div class="true__text">${localStorage.getItem('preguntas_no_respondidas')}</div>
             </div>
             <div class="replied">
                 Respondidas ${respondidas}/75
@@ -171,7 +171,7 @@ const mostrarResultadoFinal = () => {
             </div>
             <div class="">
                 <div class="true__title">No respondidas</div>
-                <div class="true__text">${localStorage.getItem('respuestas_no_respondidas')}</div>
+                <div class="true__text">${localStorage.getItem('preguntas_no_respondidas')}</div>
             </div>
             <div class="btn__next">
                 <button id="btnTryAgain">Volver a Jugar</button>
@@ -190,25 +190,27 @@ const mostrarResultadoFinal = () => {
 }
 
 // Cronometro
-const contenidoCronometro = document.querySelector(".chronometer");
+const contenedorTiempo = document.querySelector(".time");
+const barraDeProgreso = document.querySelector(".bar-progress");
 const cronometro = () => {
-    let tiempo = 10;
-    contenidoCronometro.innerHTML = tiempo;
+    let tiempo = 15;
+    contenedorTiempo.innerHTML = tiempo;
+    barraDeProgreso.style.width = '100%'
     let intervalo = setInterval(() => {
         tiempo--;
-        contenidoCronometro.innerHTML = tiempo;
+        contenedorTiempo.innerHTML = tiempo;
+        barraDeProgreso.style.width = (tiempo / 15) * 100 + '%';
         btnEnviar.addEventListener("click",()=>{
             clearInterval(intervalo)
-        })
+        });
         if (tiempo === 0) {
             clearInterval(intervalo);
-            let tiempo = parseInt(localStorage.getItem('respuestas_no_respondidas'));
-            tiempo++;
-            localStorage.setItem('respuestas_no_respondidas',tiempo);
-            console.log(localStorage.getItem('respuestas_no_respondidas'));
+            let preguntasNoRespondidas = parseInt(localStorage.getItem('preguntas_no_respondidas'));
+            preguntasNoRespondidas++;
+            localStorage.setItem('preguntas_no_respondidas',preguntasNoRespondidas);
             siguientePregunta();
         }
-    }, 1000);
-}
+    }, 1000)
+};
 
 cronometro();
