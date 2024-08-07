@@ -1,3 +1,4 @@
+// Funciones
 // Inicializar número de pregunta y contadores
 const creacionDeAlmacenamiento = ()=>{
     localStorage.setItem('respuestas_correctas', 0);
@@ -6,10 +7,6 @@ const creacionDeAlmacenamiento = ()=>{
     localStorage.setItem('numero_pregunta', 0);
     localStorage.setItem('preguntas_no_respondidas', 0);
 }
-
-creacionDeAlmacenamiento();
-
-let indice = localStorage.getItem('numero_pregunta');
 
 // Obtener datos del archivo JSON
 const obtenerDatos = async (indice) => {
@@ -33,7 +30,6 @@ const mostrarDatos = async (indice) => {
     for (let i = 0; i < resultado[1].length; i++) {
         opcionesElemento += `
             <div class="choice">
-                <input type="checkbox" class="choice__checkbox">
                 <div class="choice__text">${resultado[1][i]}</div>
             </div>
         `;
@@ -41,81 +37,21 @@ const mostrarDatos = async (indice) => {
     let titulo = `<p>${resultado[0]}</p>`;
     document.querySelector(".question").innerHTML = titulo;
     document.querySelector(".choices").innerHTML = opcionesElemento;
-    configurarCheckbox();
+    verificarOpcionSeleccionada();
 }
 
-// Llamar a la función mostrar datos
-mostrarDatos(indice);
-
-// Configurar checkboxes
-const configurarCheckbox = () => {
-    const opciones = document.querySelectorAll(".choice");
-    opciones.forEach(opcion => {
-        opcion.addEventListener("click", () => {
-            const checkbox = opcion.querySelector(".choice__checkbox");
-            opciones.forEach(opcion => {                
-                const checkbox = opcion.querySelector(".choice__checkbox");
-                if (checkbox.checked === true) {
-                    checkbox.checked = false;
-                }
-            });
-            checkbox.checked = true;
-        });
-    });
-}
-
-// Enviar y comprobar respuestas
-const btnEnviar = document.getElementById("send");
-const contenidoRespuesta = document.querySelector(".content__answer");
-btnEnviar.addEventListener("click", async (e) => {
-    e.preventDefault();
-    const opciones = document.querySelectorAll(".choice");
-    let numeroPregunta = localStorage.getItem('numero_pregunta');
-    let respuestaCorrecta = await obtenerDatos(numeroPregunta);
-    respuestaCorrecta = respuestaCorrecta[2];
-    let tituloRespuesta, colorRespuesta;
-    opciones.forEach(opcion => {
-        if (opcion.querySelector(".choice__checkbox").checked) {
-            let textoOpcion = opcion.querySelector(".choice__text").textContent;
-            if (textoOpcion === respuestaCorrecta) {
-                tituloRespuesta = "Respuesta Correcta";
-                colorRespuesta = "green";
-                let respuestasCorrectas = parseInt(localStorage.getItem('respuestas_correctas'));
-                respuestasCorrectas++;
-                localStorage.setItem('respuestas_correctas', respuestasCorrectas);
-                let respuestasIncorrectas = parseInt(localStorage.getItem('respuestas_incorrectas'));
-                let respondidas = parseInt(localStorage.getItem('respondidas'));
-                respondidas++;
-                localStorage.setItem('respondidas', respondidas);
-                mostrarContenidoRespuesta(respuestaCorrecta, tituloRespuesta, colorRespuesta, respuestasCorrectas, respuestasIncorrectas, respondidas);
-            } else {
-                tituloRespuesta = "Respuesta Incorrecta";
-                colorRespuesta = "red";
-                let respuestasIncorrectas = parseInt(localStorage.getItem('respuestas_incorrectas'));
-                respuestasIncorrectas++;
-                localStorage.setItem('respuestas_incorrectas', respuestasIncorrectas);
-                let respuestasCorrectas = parseInt(localStorage.getItem('respuestas_correctas'));
-                let respondidas = parseInt(localStorage.getItem('respondidas'));
-                respondidas++;
-                localStorage.setItem('respondidas', respondidas);
-                mostrarContenidoRespuesta(respuestaCorrecta, tituloRespuesta, colorRespuesta, respuestasCorrectas, respuestasIncorrectas, respondidas);
-            }
-        }
-    });
-})
-
-// Mostrar feedback de la respuesta
+// Mostrar respuesta
 const mostrarContenidoRespuesta = (respuestaCorrecta, tituloRespuesta, colorRespuesta, respuestasCorrectas, respuestasIncorrectas, respondidas) => {
-
+    let total_preguntas = localStorage.getItem('total_preguntas')
     let datos = `
-        <div class="answer bold">
+        <div class="answer">
             <div class="answer__title ${colorRespuesta}">${tituloRespuesta}</div>
             <div class="answer__true">Respuesta Correcta: ${respuestaCorrecta}</div>
-            <div class="true">
+            <div class="">
                 <div class="true__title green">Correctas</div>
                 <div class="true__text">${respuestasCorrectas}</div>
             </div>
-            <div class="false">
+            <div class="">
                 <div class="true__title red">Incorrectas</div>
                 <div class="true__text">${respuestasIncorrectas}</div>
             </div>
@@ -124,7 +60,7 @@ const mostrarContenidoRespuesta = (respuestaCorrecta, tituloRespuesta, colorResp
                 <div class="true__text">${localStorage.getItem('preguntas_no_respondidas')}</div>
             </div>
             <div class="replied">
-                Respondidas ${respondidas}/75
+                Respondidas ${respondidas}/${total_preguntas}
             </div>
             <div class="btn__next">
                 <button id="btnNext">Siguiente Pregunta</button>
@@ -159,13 +95,13 @@ const mostrarResultadoFinal = () => {
     let respuestasCorrectas = parseInt(localStorage.getItem('respuestas_correctas'));
     let respuestasIncorrectas = parseInt(localStorage.getItem('respuestas_incorrectas'));
     let datos = `
-        <div class="answer bold">
-            <div class="answer__title bold">Final del Quiz</div>
-            <div class="true">
+        <div class="answer">
+            <div class="answer__title">Final del Quiz</div>
+            <div class="">
                 <div class="true__title green">Respuestas Correctas</div>
                 <div class="true__text">${respuestasCorrectas}</div>
             </div>
-            <div class="false">
+            <div class="">
                 <div class="true__title red">Respuestas Incorrectas</div>
                 <div class="true__text">${respuestasIncorrectas}</div>
             </div>
@@ -190,8 +126,6 @@ const mostrarResultadoFinal = () => {
 }
 
 // Cronometro
-const contenedorTiempo = document.querySelector(".time");
-const barraDeProgreso = document.querySelector(".bar-progress");
 const cronometro = () => {
     let tiempo = 15;
     contenedorTiempo.innerHTML = tiempo;
@@ -200,17 +134,83 @@ const cronometro = () => {
         tiempo--;
         contenedorTiempo.innerHTML = tiempo;
         barraDeProgreso.style.width = (tiempo / 15) * 100 + '%';
-        btnEnviar.addEventListener("click",()=>{
-            clearInterval(intervalo)
-        });
-        if (tiempo === 0) {
+        if (estadoDeOpcion == true) {
+            estadoDeOpcion = false;            
+            clearInterval(intervalo);
+        }else if (tiempo === 0){
             clearInterval(intervalo);
             let preguntasNoRespondidas = parseInt(localStorage.getItem('preguntas_no_respondidas'));
             preguntasNoRespondidas++;
+            let respondidas = parseInt(localStorage.getItem('respondidas'));
+            respondidas++;
             localStorage.setItem('preguntas_no_respondidas',preguntasNoRespondidas);
+            localStorage.setItem('respondidas', respondidas);
             siguientePregunta();
         }
+
     }, 1000)
 };
 
+const verificarOpcionSeleccionada = ()=>{
+    const opciones = document.querySelectorAll('.choice');
+    opciones.forEach(opcion => {
+        opcion.addEventListener("click", async (e) => {
+            e.preventDefault();
+            estadoDeOpcion = true;
+            let textoOpcion = opcion.querySelector(".choice__text").textContent;
+            let numeroPregunta = parseInt(localStorage.getItem('numero_pregunta'));
+            let respuestaCorrecta = await obtenerDatos(numeroPregunta);
+            respuestaCorrecta = respuestaCorrecta[2];
+            let tituloRespuesta, colorRespuesta;
+            let estadoRespuesta;
+            if (textoOpcion === respuestaCorrecta) {
+                estadoRespuesta = `
+                    <div class="state state--true"></div>
+                    <div class="choice__text">${textoOpcion}</div>
+                `;
+                opcion.classList.add('true');
+                opcion.innerHTML = estadoRespuesta;
+                tituloRespuesta = "Respuesta Correcta";
+                colorRespuesta = "green";
+                let respuestasCorrectas = parseInt(localStorage.getItem('respuestas_correctas'));
+                respuestasCorrectas++;
+                localStorage.setItem('respuestas_correctas', respuestasCorrectas);
+                let respuestasIncorrectas = parseInt(localStorage.getItem('respuestas_incorrectas'));
+                let respondidas = parseInt(localStorage.getItem('respondidas'));
+                respondidas++;
+                localStorage.setItem('respondidas', respondidas);
+                mostrarContenidoRespuesta(respuestaCorrecta, tituloRespuesta, colorRespuesta, respuestasCorrectas, respuestasIncorrectas, respondidas);
+            }else{
+                estadoRespuesta = `
+                    <div class="state state--false"></div>
+                    <div class="choice__text">${textoOpcion}</div>
+                `;
+                opcion.classList.add('false');
+                opcion.innerHTML = estadoRespuesta;
+                tituloRespuesta = "Respuesta Incorrecta";
+                colorRespuesta = "red";
+                let respuestasIncorrectas = parseInt(localStorage.getItem('respuestas_incorrectas'));
+                respuestasIncorrectas++;
+                localStorage.setItem('respuestas_incorrectas', respuestasIncorrectas);
+                let respuestasCorrectas = parseInt(localStorage.getItem('respuestas_correctas'));
+                let respondidas = parseInt(localStorage.getItem('respondidas'));
+                respondidas++;
+                localStorage.setItem('respondidas', respondidas);
+                mostrarContenidoRespuesta(respuestaCorrecta, tituloRespuesta, colorRespuesta, respuestasCorrectas, respuestasIncorrectas, respondidas);
+            }         
+        }) ;
+    });   
+}
+
+// Declaracion de variables y constantes
+let indice = localStorage.getItem('numero_pregunta');
+const contenedorTiempo = document.querySelector(".time");
+const barraDeProgreso = document.querySelector(".bar-progress");
+const btnEnviar = document.getElementById("send");
+const contenidoRespuesta = document.querySelector(".content__answer");
+let estadoDeOpcion;
+
+// Llamamiento de funciones
+creacionDeAlmacenamiento();
+mostrarDatos(indice);
 cronometro();

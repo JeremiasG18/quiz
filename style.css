@@ -25,9 +25,7 @@ body{
     color: #fff;
 }
 
-.form{
-    margin: 20px;
-}
+.content--quiz{margin: 20px;}
 
 .question{
     padding: 10px;
@@ -67,10 +65,7 @@ body{
     text-align: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-}
+.choice__icon img{object-fit: cover;}
 
 .send-button{
     margin: 10px 0;
@@ -85,9 +80,7 @@ button{
     border-radius: 5px;
 }
 
-button:hover{
-    background-color: #1a1919;
-}
+button:hover{background-color: #1a1919;}
 
 .chronometer{
     padding: 10px;
@@ -96,6 +89,7 @@ button:hover{
     background-color: #bfb;
     text-align: center;
     position: relative;
+    border-radius: 50px;
 }
 
 .bar-progress{
@@ -106,6 +100,7 @@ button:hover{
     height: 100%;
     width: 100%;
     transition: width 1s linear;
+    border-radius: inherit;
 }
 
 .time{
@@ -114,7 +109,7 @@ button:hover{
     position: relative;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 50;
     font-size: 20px;
 }
 
@@ -123,7 +118,7 @@ button:hover{
     height: 100vh;
     position: absolute;
     background-color: rgba(0, 0, 0,.5);
-    z-index: 10px;
+    z-index: 100;
     display: none;
     justify-content: center;
     align-items: center;
@@ -139,37 +134,50 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    /* font-weight: bold; */
 }
 
 .answer__title{
-    padding: 15px;
+    padding: 10px;
     font-size: 1.4em;
     font-weight: 800;
 }
 
-.answer div{
-    margin: 3px 0;
-}
+.answer div{margin: 3px 0;}
 
-.red{
-    color: #f22;
-}
+.red{color: #f22;}
 
-.green{
-    color: #2f2;
-}
+.green{color: #2f2;}
 
-.bold{
+.true{
+    background-color: #5f5 !important;
     font-weight: bold;
+    color: #fff;
 }
+
+.false{
+    background-color: #f55 !important;
+    font-weight: bold;
+    color: #fff;
+}
+
+.state{
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #333;
+    display: flex;
+    background-position: center;
+}
+
+.state--true{background-image: url('img/correcto.png');}
+
+.state--false{background-image: url('img/incorrecto.png');}
 
 @media (width <= 400px){
     .content{
         padding: 3px;
-    }
-
-    .form{
-        margin: 5px;
     }
 
     .title{
